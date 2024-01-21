@@ -1,0 +1,4 @@
+<iframe width="{{ include.width }}" height="{{ include.height }}"
+src="https://www.youtube.com/embed/{{ include.id }}?start={{ include.start | default: 0 }}"
+srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}.title{font:24px/1.5 sans-serif;color:white;position:relative;left:20px;top:10px;}</style><a href=https://www.youtube.com/embed/{{ include.id }}?autoplay=1&start={{ include.start | default: 0 }}><img src=https://img.youtube.com/vi/{{ include.id }}/hqdefault.jpg alt='{{ include.title | default: 'video' }}'><span>▶</span></a>{% if include.title %}<span class='title'>{{ include.title }}</span>{% endif %}"
+frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

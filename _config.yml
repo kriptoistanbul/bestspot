@@ -1,0 +1,100 @@
+# Site Settings
+name: Best Spot of The World
+title: Best Spot of The World
+image: "/android-chrome-384x384.png"
+description: An Informative website with the latest news and information on cryptocurrencies and technologies.
+tags:
+  - kripto
+  - coin
+  - kripto para
+  - bitcoin
+  - ethereum
+show_hero: true
+menu:
+  - title: Home
+    url: /
+
+email: cryptocurrencynewspro@gmail.com
+# Contact Form Setting
+# See: https://formspree.io/
+formspree_form_id: mbjbzeza
+
+
+# Social Media Settings
+# Remove the item if you don't need it
+twitter_username: ccn_pro
+instagram_username: cryptocurrencynewspro
+linkedin_username: cryptocurrencynewspro
+
+
+# Posts Settings
+show_time_bar: true
+show_modal_on_exit: true
+show_modal_on_finish_post: true
+two_columns_layout: true
+
+
+# Advanced Settings
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://bestspot.world" # the base hostname & protocol for your site
+google_analytics: "G-9L50ELVB5S"
+language: "en"
+categories_folder: category
+sent_message_url: "/contact/message-sent/"
+
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:title/
+collections:
+  authors:
+    output: true
+paginate_path: "/page/:num/"
+show_get_theme_btn: true
+use_logo: false
+
+# Content paginator
+paginate_content:
+  paginate: 12
+  enabled: true
+  debug: true
+  collections:
+    - posts
+  auto: true
+  separator: "--page-break--"
+  permalink: "/:num/"
+  seo_canonical: true
+  properties:
+    part:
+      is_generated: true
+    last:
+      is_generated: true
+    single:
+      is_generated: true
+
+
+
+# SASS
+sass:
+  style: compressed
+
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-paginate-content
+# Exclude my node related stuff
+exclude: [
+  'package.json',
+  'package-lock.json',
+  'src',
+  'node_modules',
+  'initpost.sh',
+  'Gemfile',
+  'Gemfile.lock',
+  'gulpfile.js',
+  'README.md'
+]
+
+# Theme
+version: v3.1.1

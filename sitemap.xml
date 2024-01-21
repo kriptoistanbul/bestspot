@@ -1,0 +1,51 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    {% for post in site.posts %}
+        <url>
+            <loc>{{ post.url | prepend: site.baseurl | prepend: site.url }}</loc>
+            <changefreq>daily</changefreq>
+            <priority>1</priority>
+            <lastmod>{{ post.date | date: "%Y-%m-%d" }}</lastmod>
+        </url>
+    {% endfor %}
+    {% for author in site.authors %}
+        <url>
+            <loc>{{ author.url | prepend: site.baseurl | prepend: site.url }}</loc>
+            <changefreq>yearly</changefreq>
+            <priority>0.0</priority>
+        </url>
+    {% endfor %}
+    <url>
+        <loc>https://bestspot.world/</loc>
+        <changefreq>daily</changefreq>
+        <priority>1</priority>
+        <lastmod>2022-05-27</lastmod>
+    </url>
+    <url>
+        <loc>https://bestspot.world/airdrop/</loc>
+        <changefreq>daily</changefreq>
+        <priority>1</priority>
+        <lastmod>2022-08-11</lastmod>
+    </url>
+    <url>
+        <loc>https://bestspot.world/nft/</loc>
+        <changefreq>daily</changefreq>
+        <priority>1</priority>
+        <lastmod>2022-08-11</lastmod>
+    </url>
+    <url>
+        <loc>https://bestspot.world/what/</loc>
+        <changefreq>daily</changefreq>
+        <priority>1</priority>
+        <lastmod>2022-08-11</lastmod>
+    </url>
+    <url>
+        <loc>https://bestspot.world/nft/nft-coins/</loc>
+        <changefreq>daily</changefreq>
+        <priority>1</priority>
+        <lastmod>2022-08-11</lastmod>
+    </url>
+</urlset>

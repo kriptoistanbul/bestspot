@@ -1,0 +1,9 @@
+# robotstxt.org/
+
+User-agent: *
+Disallow: /tags/*
+
+Sitemap: https://bestspot.world/sitemap.xml
+
+User-agent: ChatGPT-User
+Disallow: /

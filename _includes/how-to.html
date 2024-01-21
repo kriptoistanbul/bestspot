@@ -1,0 +1,66 @@
+<div itemscope itemtype="https://schema.org/HowTo">
+  <b><span itemprop="name"><p>How to buy {{ include.coinname }}</p></span></b>
+  <div><p>Estimated Cost</p> <span itemprop="estimatedCost" itemscope itemtype="https://schema.org/MonetaryAmount">
+    <meta itemprop="currency" content="USD"/>
+    <meta itemprop="value" content="0"/>
+    <p>$0</p>
+  </span>
+  </div>
+  <div><p>Estimated Total Time</p> <span itemprop="totalTime" content="P2D"><p>5 min</p></span></div>
+  <div><p><b>What is necessary:</b></p></div>
+  <div itemprop="supply" itemscope itemtype="https://schema.org/HowToSupply">
+      <span itemprop="name"><p>ID Card</p></span>
+  </div>
+  <div itemprop="supply" itemscope itemtype="https://schema.org/HowToSupply">
+      <span itemprop="name"><p>E Mail</p></span>
+  </div>
+  <div itemprop="supply" itemscope itemtype="https://schema.org/HowToSupply">
+      <span itemprop="name"><p>Phone Number</p></span>
+  </div>
+  <div itemprop="supply" itemscope itemtype="https://schema.org/HowToSupply">
+      <span itemprop="name"><p>Payment Method</p></span>
+  </div>
+  <div itemprop="tool" itemscope itemtype="https://schema.org/HowToTool">
+      <span itemprop="name"><p>Tool: A cryptocurrency market.</p></span>
+  </div>
+  <div itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
+    <link itemprop="url" href="{{ include.coinlink }}" />
+    <div itemprop="name"><p><b>Compare Cryptocurrency Markets</b></p></div>
+    <img itemprop="image" alt="cryptocurrency market {{ include.coinname }}"
+        img src="https://bestspot.world/assets/img/compare-markets.png"/>
+    <div itemprop="itemListElement" itemscope itemtype="https://schema.org/HowToDirection">
+      <div itemprop="text"><p>{{ include.step1text }}</p>
+      </div>
+    </div>
+  </div>
+  <div itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
+    <link itemprop="url" href="{{ include.coinlink }}" />
+    <div itemprop="name"><p><b>Create an account</b></p></div>
+    <img itemprop="image" alt="register"
+           img src="https://bestspot.world/assets/img/register.png"/>
+    <div itemprop="itemListElement" itemscope itemtype="https://schema.org/HowToDirection">
+      <div itemprop="text"><p>{{ include.step2text }}</p>
+      </div>
+    </div>
+  </div>
+  <div itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
+    <link itemprop="url" href="{{ include.coinlink }}" />
+    <div itemprop="name"><p><b>Make Payment</b></p></div>
+    <img itemprop="image" alt="make payment"
+         img src="https://bestspot.world/assets/img/make-payment.png"/>
+    <div itemprop="itemListElement" itemscope itemtype="https://schema.org/HowToDirection">
+      <div itemprop="text"><p>{{ include.step3text }}</p>
+      </div>
+    </div>
+  </div>
+  <div itemprop="step" itemscope itemtype="https://schema.org/HowToStep">
+    <link itemprop="url" href="{{ include.coinlink }}" />
+    <div itemprop="name"><p><b>{{ include.coinname }} buy</b></p></div>
+    <img itemprop="image" alt="{{ include.coinname }} coin buy"
+        img src="https://bestspot.world/assets/img/{{ include.coinname }}.png"/>
+    <div itemprop="itemListElement" itemscope itemtype="https://schema.org/HowToDirection">
+      <div itemprop="text"><p>{{ include.step4text }}</p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,25 @@
+name: cryptocurrencynewspro
+title: cryptocurrencynewspro | Best Spot of The World
+image: assets/img/uploads/profile.webp
+description: An Informative website with the latest news and information on cryptocurrencies and technologies.
+tags:
+  - kripto
+  - coin
+  - kripto para
+  - bitcoin
+  - ethereum
+show_hero: true
+menu:
+  - title: Ana Sayfa
+    url: /
+  - title: Yazılar
+    url: /
+  - title: Hakkımızda
+    url: /about
+  - title: İletişim
+    url: /contact
+email: cryptocurrencynewspro@gmail.com
+# Contact Form Setting
+# See: https://formspree.io/
+formspree_form_id: formspree_form_id
+paginate: 12
