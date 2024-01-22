@@ -18,7 +18,6 @@ permalink: "/turkey/bodrum/what-to-eat-in-bodrum/"
 pagination:
   enabled: true
 ---
-    <section>
     <h1>Where to Eat in Bodrum?</h1>
     <p>Bodrum, the pearl of the Aegean, is not just about sea, sand, and sun. Each corner offers a unique flavor and a place of joy. Whether you want to hang out like a local, go for tourist attractions, or explore cool spots - the choice is yours. A guide to Bodrum's food and drink is from me; exploring is up to you. The list is not arranged by any specific criteria.</p>
 
@@ -157,5 +156,3 @@ pagination:
 
         <h3>Katip</h3>
         <p>Located in a side street in the center of Bodrum, but away from the noise and crowd, Katip is nestled among lemon gardens, serving as both a hotel and a bar-restaurant. It transports you to Sorrento, Italy, famous for its lemons. When you visit Bodrum, don't leave without having a cocktail made by Ayça at Katip.</p>
-
-    </section>
