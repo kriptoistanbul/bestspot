@@ -56,7 +56,7 @@ pagination:
 <p>Close to Gümbet, the Myndos Gate, once an entrance to ancient Halicarnassus, is especially enchanting at night and is a significant historical landmark.</p>
 
 <h2>The Charm of <b>Bitez</b></h2>
-<p>Bitez is famous for its tangerine gardens and beach, offering a more tranquil environment compared to Gümbet. It's also a paradise for windsurfers, attracting many tourists for this sport.</p>
+<p>Bitez is famous for its tangerine gardens and beach, offering a more tranquil environment compared to Gümbet. It's also a paradise for windsurfers, attracting many tourists for this sport. </p>
 
 <h2>The Allure of <b>Yalıkavak</b></h2>
 <h3>Bodrum Windmills</h3>
