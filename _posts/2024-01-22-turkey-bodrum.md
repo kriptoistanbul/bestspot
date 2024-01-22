@@ -2,7 +2,7 @@
 layout: post
 title: "Exploring Bodrum: A Guide to Must-Visit Places in 2024"
 date: 2024-01-21 17:00:19 -0500
-subtitle: Bodrum Essentials: Popular Queries on Attractions, Beaches, and Activities Answered
+subtitle: Bodrum Essentials Popular Queries on Attractions, Beaches, and Activities Answered
 description: Explore the enchanting Bodrum! Discover top attractions, pristine beaches, and vibrant culture. Plan your dream vacation now – Visit our ultimate guide!
 image: /assets/img/posts-img/turkey/bodrum.webp
 tags:
