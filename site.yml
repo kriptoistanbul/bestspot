@@ -1,7 +1,7 @@
-name: cryptocurrencynewspro
-title: cryptocurrencynewspro | Best Spot of The World
+name: Best Spot of The World
+title: Best Spot of The World
 image: assets/img/uploads/profile.webp
-description: An Informative website with the latest news and information on cryptocurrencies and technologies.
+description: Explore with Best Spot of The World: Discover expert travel tips, exclusive deals, and breathtaking destinations. Start your adventure today!
 tags:
   - kripto
   - coin
@@ -10,13 +10,13 @@ tags:
   - ethereum
 show_hero: true
 menu:
-  - title: Ana Sayfa
+  - title: Home
     url: /
-  - title: Yazılar
+  - title: Destinations
     url: /
-  - title: Hakkımızda
+  - title: About us
     url: /about
-  - title: İletişim
+  - title: Contact
     url: /contact
 email: cryptocurrencynewspro@gmail.com
 # Contact Form Setting

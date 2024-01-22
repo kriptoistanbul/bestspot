@@ -24,28 +24,4 @@ layout: null
         <priority>1</priority>
         <lastmod>2022-05-27</lastmod>
     </url>
-    <url>
-        <loc>https://bestspot.world/airdrop/</loc>
-        <changefreq>daily</changefreq>
-        <priority>1</priority>
-        <lastmod>2022-08-11</lastmod>
-    </url>
-    <url>
-        <loc>https://bestspot.world/nft/</loc>
-        <changefreq>daily</changefreq>
-        <priority>1</priority>
-        <lastmod>2022-08-11</lastmod>
-    </url>
-    <url>
-        <loc>https://bestspot.world/what/</loc>
-        <changefreq>daily</changefreq>
-        <priority>1</priority>
-        <lastmod>2022-08-11</lastmod>
-    </url>
-    <url>
-        <loc>https://bestspot.world/nft/nft-coins/</loc>
-        <changefreq>daily</changefreq>
-        <priority>1</priority>
-        <lastmod>2022-08-11</lastmod>
-    </url>
 </urlset>
