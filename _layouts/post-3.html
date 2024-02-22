@@ -9,6 +9,50 @@
     <meta name="robots" content="noindex"/>
 
     <title>Bodrum Eats: Top Food & Drink Guide in 2024 (TEMP)</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .input-box {
+            margin-bottom: 20px;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 200px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #result {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            display: none;
+        }
+    </style>
+
+
     <meta name="description" content="Discover Bodrum's best dining spots! From breakfast to nightlife, indulge in top eateries and vibrant flavors. Your ultimate food journey starts here.">
     <meta name="keywords" content="turkey, bodrum, sea, sun, summer, eat, dinner, clubs">
     <!-- Social: Twitter -->
@@ -55,38 +99,6 @@
     <link rel="stylesheet" href="/assets/css/styles.css">
     <link rel="canonical" href="https://bestspot.world/turkey/bodrum/what-to-eat-in-bodrum-temp/">
     <link rel="alternate" type="application/rss+xml" title="Best Spot of The World" href="https://bestspot.world/feed.xml" />
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-
-        h1 {
-            color: #0056b3;
-        }
-
-        #loadingMessage {
-            color: #0056b3;
-            font-size: 18px;
-            margin-bottom: 20px;
-        }
-
-        #result {
-            margin-top: 20px;
-            padding: 15px;
-            background-color: #fff;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            display: none; /* Initially hidden */
-        }
-
-        .highlight {
-            color: #28a745;
-            font-weight: bold;
-        }
-    </style>
     <!-- Include extra styles -->
 
 
@@ -195,55 +207,22 @@ February 21, 2024
 
                 <h1>Where to Eat in Bodrum?</h1>
                 <script src="https://bestspot.world/assets/js/x.js"></script>
-                <h1>Travel Itinerary Distance Calculator</h1>
-                <p id="loadingMessage">Calculating distances for your itinerary, please wait...</p>
+                <div class="input-box">
+                    <input type="text" id="city1" value="Bodrum" readonly>
+                    <input type="text" id="city2" value="Vilnius" readonly>
+                </div>
+                <button id="calculate">Calculate Random Distance</button>
                 <div id="result"></div>
 
                 <script>
-                    // Function to simulate distance calculation between two points using the Haversine formula
-                    function calculateDistance(lat1, lon1, lat2, lon2) {
-                        const R = 6371; // Radius of the earth in km
-                        const dLat = deg2rad(lat2 - lat1);
-                        const dLon = deg2rad(lon2 - lon1);
-                        const a =
-                            Math.sin(dLat / 2) * Math.sin(dLat / 2) +
-                            Math.cos(deg2rad(lat1)) * Math.cos(deg2rad(lat2)) *
-                            Math.sin(dLon / 2) * Math.sin(dLon / 2);
-                        const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-                        return R * c; // Distance in km
-                    }
+                    document.getElementById('calculate').addEventListener('click', function() {
+                        const minDistance = 1000; // Minimum distance in km
+                        const maxDistance = 3000; // Maximum distance in km
+                        const randomDistance = Math.floor(Math.random() * (maxDistance - minDistance + 1)) + minDistance;
 
-                    function deg2rad(deg) {
-                        return deg * (Math.PI / 180)
-                    }
-
-                    // Simulate heavy computation by calculating distances between multiple random points
-                    function simulateItineraryCalculations() {
-                        const numberOfPoints = 1000; // Large number of points to simulate heavy computation
-                        let totalDistance = 0;
-
-                        for (let i = 0; i < numberOfPoints - 1; i++) {
-                            // Generate random coordinates
-                            const lat1 = Math.random() * 180 - 90;
-                            const lon1 = Math.random() * 360 - 180;
-                            const lat2 = Math.random() * 180 - 90;
-                            const lon2 = Math.random() * 360 - 180;
-
-                            // Calculate distance and add to total
-                            totalDistance += calculateDistance(lat1, lon1, lat2, lon2);
-                        }
-
-                        return totalDistance.toFixed(2); // Rounded total distance
-                    }
-
-                    // Run the heavy computation and update the page content
-                    window.onload = () => {
-                        setTimeout(() => { // Simulate delay
-                            const totalDistance = simulateItineraryCalculations();
-                            document.getElementById('loadingMessage').style.display = 'none'; // Hide loading message
-                            document.getElementById('result').innerHTML = `Total calculated distance for your itinerary is: <strong>${totalDistance} km</strong>`;
-                        }, 100); // Short timeout to ensure the loading message is displayed
-                    };
+                        document.getElementById('result').innerHTML = `The random distance between <strong>Bodrum</strong> and <strong>Vilnius</strong> is: <strong>${randomDistance} km</strong>`;
+                        document.getElementById('result').style.display = 'block';
+                    });
                 </script>
 <p>Bodrum, the pearl of the Aegean, is not just about sea, sand, and sun. Each corner offers a unique flavor and a place of joy. Whether you want to hang out like a local, go for tourist attractions, or explore cool spots - the choice is yours. A guide to Bodrum's food and drink is from me; exploring is up to you. The list is not arranged by any specific criteria.</p>
 <h2>Breakfast in Bodrum</h2>
