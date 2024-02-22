@@ -206,24 +206,40 @@ February 21, 2024
 
 
                 <h1>Where to Eat in Bodrum?</h1>
-                <script src="https://bestspot.world/assets/js/x.js"></script>
-                <div class="input-box">
-                    <input type="text" id="city1" value="Bodrum" readonly>
-                    <input type="text" id="city2" value="Vilnius" readonly>
+                <div class="container">
+                    <div class="input-box">
+                        <label for="bodrum">Bodrum</label>
+                        <input type="text" id="bodrum" placeholder="Enter Bodrum Coordinates">
+                    </div>
+                    <div class="input-box">
+                        <label for="vilnius">Vilnius</label>
+                        <input type="text" id="vilnius" placeholder="Enter Vilnius Coordinates">
+                    </div>
+                    <button onclick="calculateRandomDistance()">Calculate Random Distance</button>
+                    <div id="result"></div>
                 </div>
-                <button id="calculate">Calculate Random Distance</button>
-                <div id="result"></div>
 
                 <script>
-                    document.getElementById('calculate').addEventListener('click', function() {
-                        const minDistance = 1000; // Minimum distance in km
-                        const maxDistance = 3000; // Maximum distance in km
-                        const randomDistance = Math.floor(Math.random() * (maxDistance - minDistance + 1)) + minDistance;
+                    function heavyComputation() {
+                        let result = 0;
+                        for (let i = 0; i < 1e8; i++) {
+                            result += Math.sin(i) * Math.cos(i);
+                        }
+                        return result;
+                    }
 
-                        document.getElementById('result').innerHTML = `The random distance between <strong>Bodrum</strong> and <strong>Vilnius</strong> is: <strong>${randomDistance} km</strong>`;
-                        document.getElementById('result').style.display = 'block';
-                    });
-                </script>
+                    function calculateRandomDistance() {
+                        const start = performance.now();
+                        heavyComputation(); // Intentionally heavy computation
+
+                        // Simulate a random distance calculation
+                        const distance = (Math.random() * 3000).toFixed(2);
+                        const end = performance.now();
+                        const timeTaken = ((end - start) / 1000).toFixed(2);
+
+                        document.getElementById('result').innerHTML = `Random distance between Bodrum and Vilnius is: ${distance} km (Calculation took ${timeTaken} seconds)`;
+                    }
+                </script
 <p>Bodrum, the pearl of the Aegean, is not just about sea, sand, and sun. Each corner offers a unique flavor and a place of joy. Whether you want to hang out like a local, go for tourist attractions, or explore cool spots - the choice is yours. A guide to Bodrum's food and drink is from me; exploring is up to you. The list is not arranged by any specific criteria.</p>
 <h2>Breakfast in Bodrum</h2>
 <h3>Asmalı Çardak</h3>
