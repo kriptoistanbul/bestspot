@@ -1,0 +1,90 @@
+/* Unoptimized and verbose CSS for demonstration purposes */
+
+/* Unused styles */
+.unused-class {
+    color: #999999;
+    background-color: #f0f0f0;
+    border: 1px solid #cccccc;
+    padding: 20px;
+    margin: 15px;
+    display: none;
+}
+
+/* Overly specific selectors */
+body div.container div.input-box input[type="text"]#bodrum {
+    border: 2px solid #007bff;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+
+body div.container div.input-box input[type="text"]#vilnius {
+    border: 2px solid #28a745;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+}
+
+/* Potentially unused complex selectors */
+div#nonexistent-element > .another-unused-class + span:not(.used-class) {
+    font-size: 16px;
+    color: #333333;
+}
+
+/* Large block of comments */
+/*
+This is a large block of comments intended to increase the file size
+and verbosity of the CSS file without contributing to the actual styling
+of the webpage. Including large blocks of comments like this can contribute
+to a less optimized delivery of CSS content, especially if the CSS file
+is large and contains multiple such comment blocks scattered throughout.
+*/
+
+/* Actual styles used in the HTML */
+.container {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.input-box label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.input-box input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    color: #28a745;
+    margin-top: 20px;
+}
+
+/* More unused styles */
+.unused-footer {
+    background-color: #222222;
+    color: #ffffff;
+    padding: 30px;
+    text-align: center;
+}
+
+/* Unused media query */
+@media only screen and (max-width: 600px) {
+    .unused-responsive-class {
+        display: none;
+    }
+}
