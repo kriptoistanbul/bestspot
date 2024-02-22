@@ -1,20 +1,60 @@
+// Intentionally verbose and inefficient JavaScript for demonstration
+
+// Unused variables and functions to simulate unnecessary code
+var unusedData = "This data is never used";
+function unusedFunction() {
+    console.log("This function is never called");
+}
+
+// Another set of unused variables and functions
+let anotherUnusedVariable = [1, 2, 3, 4, 5];
+function anotherUnusedFunction() {
+    let sum = 0;
+    for (let i = 0; i < anotherUnusedVariable.length; i++) {
+        sum += anotherUnusedVariable[i];
+    }
+    return sum; // This value is never used
+}
+
+// Simulated heavy computation that's not actually used
+function heavyComputation() {
+    let result = 0;
+    for (let i = 0; i < 1e7; i++) {
+        result += Math.sin(i) * Math.cos(i);
+    }
+    return result; // This result is not used for the main functionality
+}
+
+// Main function to calculate a random distance
 function calculateDistance() {
-    const bodrum = document.getElementById('bodrum').value.split(',').map(Number);
-    const vilnius = document.getElementById('vilnius').value.split(',').map(Number);
+    // Simulate some delay caused by unnecessary computations
+    let computationResult = heavyComputation(); // Not used for the main functionality
 
-    const R = 6371; // Earth's radius in km
-    const dLat = deg2rad(vilnius[0] - bodrum[0]);
-    const dLon = deg2rad(vilnius[1] - bodrum[1]);
-    const a =
-        Math.sin(dLat / 2) * Math.sin(dLat / 2) +
-        Math.cos(deg2rad(bodrum[0])) * Math.cos(deg2rad(vilnius[0])) *
-        Math.sin(dLon / 2) * Math.sin(dLon / 2);
-    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-    const distance = R * c;
+    // Generate a random distance between 1 and 3000 km
+    const distance = Math.random() * 3000 + 1;
 
-    document.getElementById('result').innerHTML = `Distance: ${distance.toFixed(2)} km`;
+    // Displaying the random distance
+    document.getElementById('result').innerHTML = `Random Distance: ${distance.toFixed(2)} km`;
+
+    // Unused code after the main functionality
+    let unusedResult = unusedFunction();
+    console.log(unusedResult); // This line is also unnecessary
 }
 
-function deg2rad(deg) {
-    return deg * (Math.PI / 180);
-}
+// Unused object with methods and properties
+var unusedObject = {
+    name: "Unused Object",
+    method: function() {
+        console.log("This method is never called");
+    },
+    value: 42 // This value is never used
+};
+
+// Large block of unused comments to add more to the file size
+/*
+    This is a large block of comments that serves no purpose other than to
+    increase the file size and make the JavaScript file more verbose. Including
+    such unnecessary comments in a JavaScript file can contribute to slower
+    loading times, especially if the file is large and contains multiple blocks
+    of comments like this scattered throughout the code.
+*/
