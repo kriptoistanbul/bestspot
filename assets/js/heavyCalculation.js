@@ -29,39 +29,7 @@ function toRadians(degrees) {
 // WARNING: This is intentionally inefficient and should not be used in production.
 
 /* Repetitive, non-optimized dummy functions and data for demonstration */
-function unusedFunction1() { let sum = 0; for (let i = 0; i < 100000; i++) { sum += i; } return sum; }
-function unusedFunction2() { let sum = 0; for (let i = 0; i < 100000; i++) { sum -= i; } return sum; }
-function unusedFunction1() { let sum = 0; for (let i = 0; i < 100000; i++) { sum += i; } return sum; }
-function unusedFunction2() { let sum = 0; for (let i = 0; i < 100000; i++) { sum -= i; } return sum; }
-function unusedFunction1() { let sum = 0; for (let i = 0; i < 100000; i++) { sum += i; } return sum; }
-function unusedFunction2() { let sum = 0; for (let i = 0; i < 100000; i++) { sum -= i; } return sum; }
-function unusedFunction1() { let sum = 0; for (let i = 0; i < 100000; i++) { sum += i; } return sum; }
-function unusedFunction2() { let sum = 0; for (let i = 0; i < 100000; i++) { sum -= i; } return sum; }
-function unusedFunction1() { let sum = 0; for (let i = 0; i < 100000; i++) { sum += i; } return sum; }
-function unusedFunction2() { let sum = 0; for (let i = 0; i < 100000; i++) { sum -= i; } return sum; }
-function unusedFunction1() { let sum = 0; for (let i = 0; i < 100000; i++) { sum += i; } return sum; }
-function unusedFunction2() { let sum = 0; for (let i = 0; i < 100000; i++) { sum -= i; } return sum; }
-function unusedFunction1() { let sum = 0; for (let i = 0; i < 100000; i++) { sum += i; } return sum; }
-function unusedFunction2() { let sum = 0; for (let i = 0; i < 100000; i++) { sum -= i; } return sum; }
-function unusedFunction1() { let sum = 0; for (let i = 0; i < 100000; i++) { sum += i; } return sum; }
-function unusedFunction2() { let sum = 0; for (let i = 0; i < 100000; i++) { sum -= i; } return sum; }
-function unusedFunction1() { let sum = 0; for (let i = 0; i < 100000; i++) { sum += i; } return sum; }
-function unusedFunction2() { let sum = 0; for (let i = 0; i < 100000; i++) { sum -= i; } return sum; }
-function unusedFunction1() { let sum = 0; for (let i = 0; i < 100000; i++) { sum += i; } return sum; }
-function unusedFunction2() { let sum = 0; for (let i = 0; i < 100000; i++) { sum -= i; } return sum; }
-function unusedFunction1() { let sum = 0; for (let i = 0; i < 100000; i++) { sum += i; } return sum; }
-function unusedFunction2() { let sum = 0; for (let i = 0; i < 100000; i++) { sum -= i; } return sum; }
-function unusedFunction1() { let sum = 0; for (let i = 0; i < 100000; i++) { sum += i; } return sum; }
-function unusedFunction2() { let sum = 0; for (let i = 0; i < 100000; i++) { sum -= i; } return sum; }
-function unusedFunction1() { let sum = 0; for (let i = 0; i < 100000; i++) { sum += i; } return sum; }
-function unusedFunction2() { let sum = 0; for (let i = 0; i < 100000; i++) { sum -= i; } return sum; }
-function unusedFunction1() { let sum = 0; for (let i = 0; i < 100000; i++) { sum += i; } return sum; }
-function unusedFunction2() { let sum = 0; for (let i = 0; i < 100000; i++) { sum -= i; } return sum; }
-function unusedFunction1() { let sum = 0; for (let i = 0; i < 100000; i++) { sum += i; } return sum; }
-function unusedFunction2() { let sum = 0; for (let i = 0; i < 100000; i++) { sum -= i; } return sum; }
-function unusedFunction1() { let sum = 0; for (let i = 0; i < 100000; i++) { sum += i; } return sum; }
-function unusedFunction2() { let sum = 0; for (let i = 0; i < 100000; i++) { sum -= i; } return sum; }function unusedFunction1() { let sum = 0; for (let i = 0; i < 100000; i++) { sum += i; } return sum; }
-function unusedFunction2() { let sum = 0; for (let i = 0; i < 100000; i++) { sum -= i; } return sum; }
+
 // ... (repetitive unused functions continue) ...
 
 // Large, unused data structure
