@@ -1,41 +1,35 @@
-// Simulated heavy computation script for a travel page
-
-// Function to simulate distance calculation between two points
+// Function to calculate the distance between two points given their latitude and longitude
 function calculateDistance(lat1, lon1, lat2, lon2) {
-  // Haversine formula to calculate distance
-  const R = 6371; // Earth's radius in km
-  const dLat = (lat2 - lat1) * Math.PI / 180;
-  const dLon = (lon2 - lon1) * Math.PI / 180;
-  const a =
-    Math.sin(dLat / 2) * Math.sin(dLat / 2) +
-    Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
-    Math.sin(dLon / 2) * Math.sin(dLon / 2);
-  const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-  return R * c; // Distance in km
+    const R = 6371; // Earth's radius in kilometers
+    const dLat = degreesToRadians(lat2 - lat1);
+    const dLon = degreesToRadians(lon2 - lon1);
+    const a =
+        Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+        Math.cos(degreesToRadians(lat1)) * Math.cos(degreesToRadians(lat2)) *
+        Math.sin(dLon / 2) * Math.sin(dLon / 2);
+    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+    return R * c; // Distance in kilometers
 }
 
-// Simulate heavy computation by calculating distances between multiple random points
-function simulateItineraryCalculations() {
-  const numberOfPoints = 1000; // Large number of points to simulate heavy computation
-  let totalDistance = 0;
-
-  for (let i = 0; i < numberOfPoints - 1; i++) {
-    // Generate random coordinates
-    const lat1 = Math.random() * 180 - 90;
-    const lon1 = Math.random() * 360 - 180;
-    const lat2 = Math.random() * 180 - 90;
-    const lon2 = Math.random() * 360 - 180;
-
-    // Calculate distance and add to total
-    totalDistance += calculateDistance(lat1, lon1, lat2, lon2);
-  }
-
-  console.log(`Total distance for ${numberOfPoints} points: ${totalDistance.toFixed(2)} km`);
+// Helper function to convert degrees to radians
+function degreesToRadians(degrees) {
+    return degrees * (Math.PI / 180);
 }
 
-// Run the heavy computation on page load
-window.onload = () => {
-  console.log('Starting itinerary calculations...');
-  simulateItineraryCalculations();
-  console.log('Itinerary calculations completed.');
-};
+// Function to read the input values, calculate the distance, and display the result
+function displayCalculatedDistance() {
+    const bodrumCoords = document.getElementById('bodrum').value.split(',');
+    const vilniusCoords = document.getElementById('vilnius').value.split(',');
+
+    // Parsing input values as floating-point numbers
+    const lat1 = parseFloat(bodrumCoords[0]);
+    const lon1 = parseFloat(bodrumCoords[1]);
+    const lat2 = parseFloat(vilniusCoords[0]);
+    const lon2 = parseFloat(vilniusCoords[1]);
+
+    // Calculating the distance
+    const distance = calculateDistance(lat1, lon1, lat2, lon2).toFixed(2);
+
+    // Displaying the result
+    document.getElementById('result').textContent = `The distance between Bodrum and Vilnius is approximately ${distance} km.`;
+}
