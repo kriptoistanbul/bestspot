@@ -10,48 +10,6 @@
 
     <title>Bodrum Eats: Top Food & Drink Guide in 2024 (TEMP)</title>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-
-        .input-box {
-            margin-bottom: 20px;
-        }
-
-        input[type="text"] {
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            width: 200px;
-        }
-
-        button {
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #0056b3;
-        }
-
-        #result {
-            margin-top: 20px;
-            padding: 15px;
-            background-color: #fff;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            display: none;
-        }
-    </style>
-
 
     <meta name="description" content="Discover Bodrum's best dining spots! From breakfast to nightlife, indulge in top eateries and vibrant flavors. Your ultimate food journey starts here.">
     <meta name="keywords" content="turkey, bodrum, sea, sun, summer, eat, dinner, clubs">
@@ -97,6 +55,7 @@
     <link href="" rel="stylesheet">
 
     <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/unoptimizedStyles.css">
     <link rel="canonical" href="https://bestspot.world/turkey/bodrum/what-to-eat-in-bodrum-temp/">
     <link rel="alternate" type="application/rss+xml" title="Best Spot of The World" href="https://bestspot.world/feed.xml" />
     <!-- Include extra styles -->
@@ -208,30 +167,18 @@ February 21, 2024
                 <h1>Where to Eat in Bodrum?</h1>
                 <div class="container">
                     <div class="input-box">
-                        <label for="bodrum">Bodrum</label>
-                        <input type="text" id="bodrum" placeholder="Enter Bodrum Coordinates">
+                        <label for="bodrum">Bodrum Coordinates (lat,lon):</label>
+                        <input type="text" id="bodrum" placeholder="37.0344,27.4305">
                     </div>
                     <div class="input-box">
-                        <label for="vilnius">Vilnius</label>
-                        <input type="text" id="vilnius" placeholder="Enter Vilnius Coordinates">
+                        <label for="vilnius">Vilnius Coordinates (lat,lon):</label>
+                        <input type="text" id="vilnius" placeholder="54.6872,25.2797">
                     </div>
-                    <button onclick="calculateRandomDistance()">Calculate Random Distance</button>
+                    <button onclick="calculateDistance()">Calculate Distance</button>
                     <div id="result"></div>
                 </div>
 
-                <script>
-                <div>
-                    <label for="bodrum">Bodrum Coordinates (lat,lon):</label>
-                    <input type="text" id="bodrum" placeholder="37.0344,27.4305">
-                </div>
-                <div>
-                    <label for="vilnius">Vilnius Coordinates (lat,lon):</label>
-                    <input type="text" id="vilnius" placeholder="54.6872,25.2797">
-                </div>
-                <button onclick="displayCalculatedDistance()">Calculate Distance</button>
-                <div id="result"></div>
-
-                <script src="calculateDistance.js"></script>
+                <script src="path/to/your/assets/heavyCalculation.js"></script>
 <p>Bodrum, the pearl of the Aegean, is not just about sea, sand, and sun. Each corner offers a unique flavor and a place of joy. Whether you want to hang out like a local, go for tourist attractions, or explore cool spots - the choice is yours. A guide to Bodrum's food and drink is from me; exploring is up to you. The list is not arranged by any specific criteria.</p>
 <h2>Breakfast in Bodrum</h2>
 <h3>Asmalı Çardak</h3>
