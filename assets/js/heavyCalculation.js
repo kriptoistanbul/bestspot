@@ -27,18 +27,9 @@ function heavyComputation() {
 
 // Main function to calculate a random distance
 function calculateDistance() {
-    // Simulate some delay caused by unnecessary computations
-    let computationResult = heavyComputation(); // Not used for the main functionality
-
-    // Generate a random distance between 1 and 3000 km
-    const distance = Math.random() * 3000 + 1;
-
-    // Displaying the random distance
+    // Directly generate and display a random distance between 1 and 3000 km
+    const distance = Math.random() * 3000 + 1; // Random distance calculation
     document.getElementById('result').innerHTML = `Random Distance: ${distance.toFixed(2)} km`;
-
-    // Unused code after the main functionality
-    let unusedResult = unusedFunction();
-    console.log(unusedResult); // This line is also unnecessary
 }
 
 // Unused object with methods and properties
