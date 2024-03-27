@@ -96,5 +96,8 @@ exclude: [
   'README.md'
 ]
 
+include:
+  - .htaccess
+
 # Theme
 version: v3.1.1
