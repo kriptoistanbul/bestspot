@@ -1,1 +1,9 @@
+# Apply noindex, follow to the entire site or a broader section
 Header set X-Robots-Tag "noindex, follow"
+
+# Override for a specific file
+<IfModule mod_headers.c>
+    <Files "what-to-eat-in-bodrum-temp-2.html">
+        Header set X-Robots-Tag "noindex, follow"
+    </Files>
+</IfModule>
